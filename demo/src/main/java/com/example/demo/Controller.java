@@ -5,10 +5,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-
+    
+    User user;
+    Controller(User user)
+    {
+        this.user=user;   
+    }
     @GetMapping("/user")
     public User getUser() {
-      User user=new User();
       user.setName("kumar");
       user.setAge(22);
       user.setId(203);

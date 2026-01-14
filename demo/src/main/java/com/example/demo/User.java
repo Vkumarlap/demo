@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
      private String name="kumar7569222";
      private int age;
